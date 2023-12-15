@@ -2,10 +2,7 @@ body {
     height:100%;
     width:100%;
     background-color: bisque;
-
-
 }
-
 
 #big-container{
     align-content:justify;
@@ -24,7 +21,6 @@ body {
     margin: auto;
     border: 4px solid black;
 }
-
 
 #input_div {
     font-size: 18px;

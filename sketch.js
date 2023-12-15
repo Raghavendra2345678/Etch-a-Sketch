@@ -4,20 +4,17 @@ function addBoxes() {
     squares(n);
 }
 
-
-
 function squares(n) {
     
     const c = document.getElementById("container");
     console.log(c.style.width);
     
-
     for(let i = 0; i < n; i++){
         const row = document.createElement("div");
         row.style.display="flex";
         row.style.width= "410px";
         row.style.height= 410/n+"px";
-        console.log("hello");
+        //console.log("hello");
         for (let j = 0; j < n; j++) {
             const sq = document.createElement('div');
             sq.id = "sq";
@@ -28,7 +25,7 @@ function squares(n) {
             sq.onclick="sq.style.background-color: grey;";
             row.appendChild(sq);
         }
-        console.log('hi');
+        //console.log('hi');
         c.appendChild(row);
           
     }
