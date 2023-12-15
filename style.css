@@ -11,13 +11,9 @@
 #container {
     height : 410px;
     width : 410px;
-    display:flex; 
     margin: auto;
 }
 
-.box {
-    float: left;
-}
 
 #input {
     font-size: 18px;
