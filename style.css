@@ -44,6 +44,7 @@ body {
 #sq {
     background-color: #e8e8d8;
     transition: 0s 180s;
+    border: 1px solid black;
 }
 #sq:hover{
     background-color: grey;
