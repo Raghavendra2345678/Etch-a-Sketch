@@ -4,6 +4,8 @@ function addBoxes() {
     squares(n);
 }
 
+
+
 function squares(n) {
     
     const c = document.getElementById("container");
@@ -18,18 +20,23 @@ function squares(n) {
         console.log("hello");
         for (let j = 0; j < n; j++) {
             const sq = document.createElement('div');
-            sq.style.backgroundColor = "red";
+            sq.id = "sq";
             sq.style.width = 410/n+"px";
             sq.style.height = 410/n+"px";
-            sq.style.border = "2px solid black";
             sq.style.flex = 1;
             sq.style.flexShrink= 0;
+            sq.onclick="sq.style.background-color: grey;";
             row.appendChild(sq);
         }
         console.log('hi');
         c.appendChild(row);
-        
-        
+          
     }
 }
 
+function reset_grid(){
+    var container = document.getElementById("container");
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+}
